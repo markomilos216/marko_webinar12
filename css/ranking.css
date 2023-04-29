@@ -1,0 +1,206 @@
+section{
+    width: 960px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 25px;
+    margin-top: 10px;
+}
+
+.home-btn{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;       
+    background: #F24405;
+    border: 1px solid #F24405;
+    border-radius: 8px;    
+    padding: 16px 45px;    
+    cursor: pointer;
+}
+a:hover,
+a:focus{
+    background: #FA591F;
+    border: 1px solid #FA591F;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 55px;
+    
+}
+thead tr{
+    background: #348888;
+    font-size: 22px;
+}
+th{
+    padding: 10px 15px;
+    border: 1px solid #000;
+}
+td{
+    font-size: 18px;
+    border: 1px solid #348888;
+    padding: 5px 8px;
+}
+tr:nth-child(even){
+    background: #9EF8EE;
+}
+td:nth-child(1){
+    text-align: right;
+}
+td:nth-child(3),
+td:nth-child(4){
+    text-align: center;
+}
+.good-rank{
+    color: green;
+}
+
+.first-tool .tooltip{
+    position: absolute;
+    left: 221px;
+    top: 252px;
+    background-color: #348888;
+    padding: 15px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    
+}
+
+.tool-text{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.tooltip img{
+    width: 140px;
+    height: 180px;
+}
+
+.first-tool:hover .tooltip{
+    visibility:visible;
+    opacity: 1;
+    transition: 2s;
+}
+
+.second-tool .tooltip{
+    position: absolute;
+    left: 221px;
+    top: 284px;
+    background-color: #348888;
+    padding: 15px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.second-tool:hover .tooltip{
+     visibility:visible;
+     opacity: 1;
+     transition: 2s;
+}
+
+.third-tool .tooltip{
+    position: absolute;
+    left: 221px;
+    top: 316px;
+    background-color: #348888;
+    padding: 15px;
+    border-radius: 6px;
+    visibility: hidden; 
+    opacity: 0;
+    transition: 1s;  
+}
+
+.third-tool:hover .tooltip{
+     visibility:visible;
+     opacity: 1;
+     transition: 2s;
+}
+
+.fourth-tool .tooltip{
+    position: absolute;
+    left: 221px;
+    top: 347px;
+    background-color: #348888;
+    padding: 15px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;   
+}
+
+.fourth-tool:hover .tooltip{
+     visibility:visible;
+     opacity: 1;
+     transition: 2s;
+}
+
+.fiveth-tool .tooltip{
+    position: absolute;
+    left: 221px;
+    top: 378.5px;
+    background-color: #348888;
+    padding: 15px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;   
+}
+
+.fiveth-tool:hover .tooltip{
+     visibility:visible;
+     opacity: 1;
+     transition: 2s;
+}
+
+.first-tool,
+.second-tool,
+.third-tool,
+.fourth-tool,
+.fiveth-tool{
+    cursor: pointer;
+}
+
+.tooltip:before{
+    content:'\f04b';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    top: 7px;
+    right: -19px;
+    color: #348888;
+}
+
+h2{
+    margin: 75px 0px 35px 0px;
+}
+figure{
+    width: 350px;
+    height: 550px;
+    float: left;
+    padding-right: 52px;
+}
+p{
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 15px;
+}
+
+audio{
+    margin-left: 105px;
+}

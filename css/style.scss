@@ -1,0 +1,200 @@
+/*VARIABLES*/
+$color-button: #F24405;
+$color-table-title: #348888;
+$color-even-tablerow: #9EF8EE;
+$tool-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*MIXINS*/
+@mixin tooltip{
+    position: absolute;
+    background-color: $color-table-title;
+    padding: 15px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+@mixin tooltip-hover{
+    visibility:visible;
+    opacity: 1;
+    transition: 2s;
+}
+/*STYLE*/
+section{
+    width: 960px;
+    margin: 0 auto;
+    h1{
+        text: {
+            align: center;
+            decoration: underline;
+        }
+        padding-bottom: 25px;
+        margin-top: 10px;
+        font-size: 35px;
+    }
+}
+.home-btn{ 
+    a{
+        text: {
+            decoration: none;
+            transform: uppercase;
+        }
+        font-weight: bold;
+        color: #fff;       
+        background: $color-button;
+        border: 1px solid $color-button;
+        border-radius: 8px;    
+        padding: 16px 45px;    
+        cursor: pointer;
+        
+        &:hover{
+           background-color: lighten($color-button, 5%); 
+           border: 1px solid $color-button;
+        }
+    }
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 55px;
+    thead tr{
+        background: $color-table-title;
+        font-size: 22px;
+    }
+    th{
+        padding: 10px 15px;
+        border: 1px solid #000;
+    }
+    td{
+        font-size: 18px;
+        border: 1px solid $color-table-title;
+        padding: 5px 8px;
+    }
+    tr:nth-child(even){
+        background: $color-even-tablerow;
+    }
+    td:nth-child(1){
+        text-align: right;
+    }
+    td:nth-child(3),
+    td:nth-child(4){
+        text-align: center;
+    }
+    .good-rank{
+        color: green;
+    }
+    .tooltip{
+        img{
+            width: 140px;
+            height: 180px;
+        }
+    }
+    .first-tool{
+        &:hover{
+            .tooltip{
+                @include tooltip-hover;
+            } 
+        }
+        .tooltip{
+            @include tooltip;
+            left: 221px;
+            top: 252px;
+        }
+    }
+
+    .second-tool{
+        &:hover{
+            .tooltip{
+                @include tooltip-hover;
+            } 
+        }
+        .tooltip{
+            @include tooltip;
+            left: 221px;
+            top: 284px;
+        }
+        
+    }
+    .third-tool{
+        &:hover{
+            .tooltip{
+                @include tooltip-hover;
+            } 
+        }
+        .tooltip{
+            @include tooltip;
+            left: 221px;
+            top: 316px;
+        }
+        
+    }
+    .fourth-tool{
+        &:hover{
+            .tooltip{
+                @include tooltip-hover;
+            } 
+        }
+        .tooltip{
+            @include tooltip;
+            left: 221px;
+            top: 347px;
+        }
+        
+    }
+    .fiveth-tool{
+        &:hover{
+            .tooltip{
+                @include tooltip-hover;
+            } 
+        }
+        .tooltip{
+            @include tooltip;
+            left: 221px;
+            top: 378.5px;
+        }
+    }
+    .tool-text{
+        font: {
+            size: 18px;
+            family: $tool-font;
+        }
+        display: block;
+    }
+    .first-tool,
+    .second-tool,
+    .third-tool,
+    .fourth-tool,
+    .fiveth-tool{
+     cursor: pointer;
+    }
+    .tooltip:before{
+        font: {
+            family: "Font Awesome 5 Free";
+            weight: 900;
+            size: 30px;;
+        }
+        content:'\f04b';
+        position: absolute;
+        top: 7px;
+        right: -19px;
+        color: #348888;
+    }
+}
+h2{
+    margin: 75px 0px 35px 40px;
+}
+figure{
+    width: 350px;
+    height: 550px;
+    float: left;
+    padding-right: 52px;
+}
+p{
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 15px;
+}
+audio{
+    margin-left: 105px;
+}

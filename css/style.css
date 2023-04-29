@@ -1,0 +1,191 @@
+/*VARIABLES*/
+/*MIXINS*/
+/*STYLE*/
+section {
+  width: 960px;
+  margin: 0 auto;
+}
+section h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+}
+.home-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background: #F24405;
+  border: 1px solid #F24405;
+  border-radius: 8px;
+  padding: 16px 45px;
+  cursor: pointer;
+}
+.home-btn a:hover {
+  background-color: #fa5316;
+  border: 1px solid #F24405;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 55px;
+}
+table thead tr {
+  background: #348888;
+  font-size: 22px;
+}
+table th {
+  padding: 10px 15px;
+  border: 1px solid #000;
+}
+table td {
+  font-size: 18px;
+  border: 1px solid #348888;
+  padding: 5px 8px;
+}
+table tr:nth-child(even) {
+  background: #9EF8EE;
+}
+table td:nth-child(1) {
+  text-align: right;
+}
+table td:nth-child(3),
+table td:nth-child(4) {
+  text-align: center;
+}
+table .good-rank {
+  color: green;
+}
+table .tooltip img {
+  width: 140px;
+  height: 180px;
+}
+table .first-tool:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+table .first-tool .tooltip {
+  position: absolute;
+  background-color: #348888;
+  padding: 15px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  left: 221px;
+  top: 252px;
+}
+table .second-tool:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+table .second-tool .tooltip {
+  position: absolute;
+  background-color: #348888;
+  padding: 15px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  left: 221px;
+  top: 284px;
+}
+table .third-tool:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+table .third-tool .tooltip {
+  position: absolute;
+  background-color: #348888;
+  padding: 15px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  left: 221px;
+  top: 316px;
+}
+table .fourth-tool:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+table .fourth-tool .tooltip {
+  position: absolute;
+  background-color: #348888;
+  padding: 15px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  left: 221px;
+  top: 347px;
+}
+table .fiveth-tool:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+table .fiveth-tool .tooltip {
+  position: absolute;
+  background-color: #348888;
+  padding: 15px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  left: 221px;
+  top: 378.5px;
+}
+table .tool-text {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+}
+table .first-tool,
+table .second-tool,
+table .third-tool,
+table .fourth-tool,
+table .fiveth-tool {
+  cursor: pointer;
+}
+table .tooltip:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  content: "\f04b";
+  position: absolute;
+  top: 7px;
+  right: -19px;
+  color: #348888;
+}
+h2 {
+  margin: 75px 0px 35px 40px;
+}
+figure {
+  width: 350px;
+  height: 550px;
+  float: left;
+  padding-right: 52px;
+}
+p {
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 15px;
+}
+audio {
+  margin-left: 105px;
+}
+
+/*# sourceMappingURL=style.css.map */
